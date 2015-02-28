@@ -28,7 +28,7 @@ md5sums=('SKIP'
          '68a774a6bddcfdf83c9734dfffeab6c2'
          '6b793a81d051d5d0b00a6031ceb08308'
          '76cf16c8e4347d369330ed64ff28083b'
-         '9189f089281bda06b2ca3220554d9497'
+         '7f8a031aa0b08dfa53de1495186b3381'
          'f8e10a9fa0324f68650a646769339da9'
          '2437e44479a54376ad9244d120369f6c'
          'd5c65f43e057054e9728810530c4a030'
@@ -72,7 +72,6 @@ package() {
   install -D -m644 "${srcdir}/kdm_sddm.conf" "${pkgdir}/etc/calamares/modules/kdm_sddm.conf"
   install -D -m644 "${srcdir}/locale.conf" "${pkgdir}/etc/calamares/modules/locale.conf"
   install -D -m644 "${srcdir}/prepare.conf" "${pkgdir}/etc/calamares/modules/prepare.conf"
-  install -Dm755 "${srcdir}/${pkgname}/src/branding"  "${pkgdir}/etc/calamares/branding"
   
   sed 's|linux312|linux|' -i "${pkgdir}/usr/share/calamares/modules/initcpio.conf"
   
