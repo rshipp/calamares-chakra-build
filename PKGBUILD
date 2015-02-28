@@ -47,6 +47,7 @@ prepare () {
   #patch -p1 -i ${srcdir}/UEFI.diff
   #patch -p1 -i ${srcdir}/JobQueue.diff
   #patch -p1 -i ${srcdir}/along_UEFI.diff
+  sed -i 's/: packagekit/: pacman/' ${srcdir}/${pkgname}/src/modules/packages/packages.conf
 }
 
 build() {
