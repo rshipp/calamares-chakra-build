@@ -25,7 +25,7 @@ source=("git://github.com/calamares/calamares"
 md5sums=('SKIP'
          '68a774a6bddcfdf83c9734dfffeab6c2'
          '6b793a81d051d5d0b00a6031ceb08308'
-         'ebc235d4b2f9a425bf2161d7a252dce3'
+         '76cf16c8e4347d369330ed64ff28083b'
          '9189f089281bda06b2ca3220554d9497'
          '2437e44479a54376ad9244d120369f6c'
          'd5c65f43e057054e9728810530c4a030')
