@@ -16,7 +16,8 @@ source=("git://github.com/calamares/calamares"
         'prepare.conf'
         'settings.conf'
         'launch-calamares.sh'
-        'installer.svg')
+        'installer.svg'
+        'calamares.desktop')
 #        'GreetingPage.diff'
 #        'CalamaresStyle.diff'
 #        'UEFI.diff'
@@ -28,7 +29,8 @@ md5sums=('SKIP'
          '76cf16c8e4347d369330ed64ff28083b'
          '9189f089281bda06b2ca3220554d9497'
          '2437e44479a54376ad9244d120369f6c'
-         'd5c65f43e057054e9728810530c4a030')
+         'd5c65f43e057054e9728810530c4a030'
+         '31a21df45f1f6a9fb0aaf0d5418895f2')
 
 prepare () {
   cd ${srcdir}/${pkgname}
