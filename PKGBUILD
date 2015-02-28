@@ -15,6 +15,7 @@ source=("git://github.com/calamares/calamares"
         'locale.conf'
         'prepare.conf'
         'settings.conf'
+        'unpackfs.conf'
         'launch-calamares.sh'
         'installer.svg'
         'calamares.desktop')
@@ -28,6 +29,7 @@ md5sums=('SKIP'
          '6b793a81d051d5d0b00a6031ceb08308'
          '76cf16c8e4347d369330ed64ff28083b'
          '9189f089281bda06b2ca3220554d9497'
+         'f8e10a9fa0324f68650a646769339da9'
          '2437e44479a54376ad9244d120369f6c'
          'd5c65f43e057054e9728810530c4a030'
          '31a21df45f1f6a9fb0aaf0d5418895f2')
