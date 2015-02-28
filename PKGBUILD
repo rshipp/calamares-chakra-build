@@ -75,8 +75,6 @@ package() {
   install -Dm755 "${srcdir}/${pkgname}/src/branding"  "${pkgdir}/etc/calamares/branding"
   
   sed 's|linux312|linux|' -i "${pkgdir}/usr/share/calamares/modules/initcpio.conf"
-  # toggle for kf5/kde 4 ISO
-  #sed 's|KaOS-kf5|KaOS|' -i "${pkgdir}/usr/share/calamares/modules/bootloader.conf"
   
   install -Dm755 "${srcdir}/launch-calamares.sh" "${pkgdir}/usr/bin/launch-calamares.sh"
   install -Dm644 "$srcdir/$pkgname.desktop" "$pkgdir/usr/share/applications/$pkgname.desktop"
