@@ -9,7 +9,7 @@ license=('LGPL')
 depends=('qt5-svg' 'kconfig' 'ki18n' 'kcoreaddons' 'solid' 'yaml-cpp'
          'parted' 'libatasmart' 'udisks2' 'polkit-qt5')
 makedepends=('extra-cmake-modules' 'git' 'qt5-tools')
-source=("git://github.com/calamares/calamares"
+source=("git://github.com/rshipp/calamares"
 #source=("calamares.tar.xz"
         'kdm_sddm.conf'
         'locale.conf'
@@ -28,7 +28,7 @@ md5sums=('SKIP'
          '68a774a6bddcfdf83c9734dfffeab6c2'
          '6b793a81d051d5d0b00a6031ceb08308'
          '76cf16c8e4347d369330ed64ff28083b'
-         'f27b2666e3dda15edca9cbb871ea3156'
+         '14ec50010bf9429a582faa8855151b7c'
          'f8e10a9fa0324f68650a646769339da9'
          '2437e44479a54376ad9244d120369f6c'
          'd5c65f43e057054e9728810530c4a030'
