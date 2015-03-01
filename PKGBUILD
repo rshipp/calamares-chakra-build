@@ -15,6 +15,7 @@ source=("git://github.com/rshipp/calamares"
         'locale.conf'
         'prepare.conf'
         'settings.conf'
+        'packages.conf'
         'unpackfs.conf'
         'launch-calamares.sh'
         'installer.svg'
@@ -28,7 +29,8 @@ md5sums=('SKIP'
          '68a774a6bddcfdf83c9734dfffeab6c2'
          '6b793a81d051d5d0b00a6031ceb08308'
          '76cf16c8e4347d369330ed64ff28083b'
-         '14ec50010bf9429a582faa8855151b7c'
+         '97973937b364dde58aafbf937330316e'
+         '44e49f039aaa16b9c6f1fc1edba74b3f'
          'f8e10a9fa0324f68650a646769339da9'
          '2437e44479a54376ad9244d120369f6c'
          'd5c65f43e057054e9728810530c4a030'
@@ -47,7 +49,6 @@ prepare () {
   #patch -p1 -i ${srcdir}/UEFI.diff
   #patch -p1 -i ${srcdir}/JobQueue.diff
   #patch -p1 -i ${srcdir}/along_UEFI.diff
-  sed -i 's/: packagekit/: pacman/' ${srcdir}/${pkgname}/src/modules/packages/packages.conf
 }
 
 build() {
@@ -73,6 +74,7 @@ package() {
   install -D -m644 "${srcdir}/locale.conf" "${pkgdir}/etc/calamares/modules/locale.conf"
   install -D -m644 "${srcdir}/prepare.conf" "${pkgdir}/etc/calamares/modules/prepare.conf"
   install -D -m644 "${srcdir}/unpackfs.conf" "${pkgdir}/etc/calamares/modules/unpackfs.conf"
+  install -D -m644 "${srcdir}/packages.conf" "${pkgdir}/etc/calamares/modules/packages.conf"
   
   sed 's|linux312|linux|' -i "${pkgdir}/usr/share/calamares/modules/initcpio.conf"
   
