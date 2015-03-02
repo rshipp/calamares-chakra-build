@@ -7,7 +7,8 @@ arch=('x86_64')
 url='https://github.com/calamares/calamares'
 license=('LGPL')
 depends=('qt5-svg' 'kconfig' 'ki18n' 'kcoreaddons' 'solid' 'yaml-cpp'
-         'parted' 'libatasmart' 'udisks2' 'polkit-qt5' 'boost-libs')
+         'parted' 'libatasmart' 'udisks2' 'polkit-qt5' 'boost-libs'
+         'rsync')
 makedepends=('extra-cmake-modules' 'git' 'qt5-tools')
 source=("git://github.com/rshipp/calamares"
 #source=("calamares.tar.xz"
@@ -30,7 +31,7 @@ md5sums=('SKIP'
          '6b793a81d051d5d0b00a6031ceb08308'
          '76cf16c8e4347d369330ed64ff28083b'
          '97973937b364dde58aafbf937330316e'
-         '36852054d866291a7ef09d74a3fb5529'
+         '6c5ad7fd2e32a189a47c0b9a43f18ec8'
          'f8e10a9fa0324f68650a646769339da9'
          '2437e44479a54376ad9244d120369f6c'
          'd5c65f43e057054e9728810530c4a030'
