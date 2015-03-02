@@ -12,7 +12,7 @@ depends=('qt5-svg' 'kconfig' 'ki18n' 'kcoreaddons' 'solid' 'yaml-cpp'
 makedepends=('extra-cmake-modules' 'git' 'qt5-tools')
 source=("git://github.com/rshipp/calamares"
 #source=("calamares.tar.xz"
-        'kdm_sddm.conf'
+        'displaymanagers.conf'
         'locale.conf'
         'prepare.conf'
         'settings.conf'
@@ -27,14 +27,14 @@ source=("git://github.com/rshipp/calamares"
 #        'JobQueue.diff'
 #        'along_UEFI.diff')
 md5sums=('SKIP'
-         '68a774a6bddcfdf83c9734dfffeab6c2'
-         '6b793a81d051d5d0b00a6031ceb08308'
+         '0364830e843823dff80b18509ea4042e'
+         'c05b2dda2e0a8a57cf25cc89913a1f4f'
          '76cf16c8e4347d369330ed64ff28083b'
          '97973937b364dde58aafbf937330316e'
-         '6c5ad7fd2e32a189a47c0b9a43f18ec8'
+         '9bb8c11b3f414c2ff326cc4c9e30349b'
          'f8e10a9fa0324f68650a646769339da9'
          '2437e44479a54376ad9244d120369f6c'
-         'd5c65f43e057054e9728810530c4a030'
+         'f005a6e10b8e0425e04207920b6231b7'
          '31a21df45f1f6a9fb0aaf0d5418895f2')
 
 prepare () {
@@ -71,7 +71,7 @@ package() {
   
   rm -rf "${pkgdir}/usr/share/calamares/settings.conf"
   install -D -m644 "${srcdir}/settings.conf" "${pkgdir}/usr/share/calamares/settings.conf"
-  install -D -m644 "${srcdir}/kdm_sddm.conf" "${pkgdir}/etc/calamares/modules/kdm_sddm.conf"
+  install -D -m644 "${srcdir}/displaymanagers.conf" "${pkgdir}/etc/calamares/modules/displaymanagers.conf"
   install -D -m644 "${srcdir}/locale.conf" "${pkgdir}/etc/calamares/modules/locale.conf"
   install -D -m644 "${srcdir}/prepare.conf" "${pkgdir}/etc/calamares/modules/prepare.conf"
   install -D -m644 "${srcdir}/unpackfs.conf" "${pkgdir}/etc/calamares/modules/unpackfs.conf"
