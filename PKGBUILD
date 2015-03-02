@@ -7,7 +7,7 @@ arch=('x86_64')
 url='https://github.com/calamares/calamares'
 license=('LGPL')
 depends=('qt5-svg' 'kconfig' 'ki18n' 'kcoreaddons' 'solid' 'yaml-cpp'
-         'parted' 'libatasmart' 'udisks2' 'polkit-qt5')
+         'parted' 'libatasmart' 'udisks2' 'polkit-qt5' 'boost-libs')
 makedepends=('extra-cmake-modules' 'git' 'qt5-tools')
 source=("git://github.com/rshipp/calamares"
 #source=("calamares.tar.xz"
