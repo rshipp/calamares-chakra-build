@@ -1,7 +1,7 @@
 
 pkgname=calamares
 pkgver=1.0.1
-pkgrel=1
+pkgrel=2
 pkgdesc='Distribution-independent installer framework'
 arch=('x86_64')
 url='https://github.com/calamares/calamares'
@@ -31,7 +31,7 @@ md5sums=('SKIP'
          'c05b2dda2e0a8a57cf25cc89913a1f4f'
          '76cf16c8e4347d369330ed64ff28083b'
          '97973937b364dde58aafbf937330316e'
-         'c02ffb5c4b7adecf79e227369fb83c5f'
+         'c98260c476e1a9eee8f03b01714c8099'
          'f8e10a9fa0324f68650a646769339da9'
          '2437e44479a54376ad9244d120369f6c'
          'f005a6e10b8e0425e04207920b6231b7'
